@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Forms v1</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" media="all">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=702">
+
+  </head>
+  <body>
+    <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+    <h2>Join the Bridg Bacon eClub!</h2>
+    <p>Bacon ipsum dolor sit amet flank meatloaf tongue bresaola. Meatloaf pork belly ham kevin shank beef ribs turducken doner.</p>
+
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" />
+      </p>
+
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p id="birthdate" class="birthday"><span class="bday">Birthdate</span>
+
+      <span class="custom-dropdown">
+        <select class="month derpdwn">
+          <option>Month</option>
+          <option>January</option>
+          <option>February</option>  
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+      </span>
+
+      <span class="custom-dropdown">
+        <select class="day derpdwn">
+          <option>Day</option>
+          <option>1</option>
+          <option>2</option>  
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+      </span>
+
+      <span class="custom-dropdown">
+        <select class="year derpdwn">
+          <option>Year</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+        </select>
+      </span>
+      </p>
+
+      <p class="text">
+        <input name="location" class="validate[required,length[3,300]] feedback-input location" id="location" placeholder="Favorite City Location" />
+      </p>
+
+      <!-- <p class="text">
+        <textarea name="text" class="validate[required,length[3,300]] feedback-input" id="comment" placeholder="Additional comments"></textarea>
+      </p> -->
+      
+      
+      <div class="submit">
+        <input type="submit" value="JOIN THE CLUB YO!" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+
+      <footer>Bacon ipsum dolor sit amet flank meatloaf tongue bresaola. Meatloaf pork belly ham kevin shank beef ribs turducken doner.</footer>
+    </form>
+  </div>
+  </body>
+</html>
