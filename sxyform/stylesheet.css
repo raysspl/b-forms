@@ -6,7 +6,7 @@ html {
   height:100%;
   font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
 }
-
+ 
 body {
   
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .feedback-input {
-  color:#3c3c3c;
+  /*color:#3c3c3c;*/
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 14px;
@@ -59,7 +59,7 @@ body {
   background: #fff;
   box-shadow: 0;
   border: 3px solid #3498db;
-  color: #3498db;
+  /*color: #3498db;*/
   outline: none;
   padding: 13px 13px 13px 54px;
 }
@@ -175,14 +175,14 @@ textarea {
   display: inline-block;
   /*vertical-align: middle;*/
   margin-left: -50px; 
-  color:#3c3c3c;
+  /*color:#3c3c3c;*/
   font-size: 14px;
 }
 
 .custom-dropdown select {
   /*background-color: #65b5bc;*/
-  background-color: white;
-  color:#3c3c3c;
+  /*background-color: white;*/
+  /*color:#b3b3b3*/;
   font-size: inherit;
   padding: 13px 5px 13px 8px;
   /*border: 1px solid #65b5bc;*/
@@ -224,6 +224,7 @@ select.derpdwn {
   margin: 0px 25px;
   text-align: center;
   background-color: #fbfbfb;
+  color:#b3b3b3;
 }
 
 #button-blue{
@@ -297,6 +298,7 @@ input {
     /*padding-top: 20px;*/
     margin-top: 20px;
     width: 580px;
+    /*color: #b3b3b3;*/
     }
   span.bday {
     margin-left: 54px;
