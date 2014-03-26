@@ -260,6 +260,7 @@ select.derpdwn {
 }
   
 .ease {
+  border-radius: 5px;
   width: 0px;
   height: 50px;
   background-color: #fbfbfb;
