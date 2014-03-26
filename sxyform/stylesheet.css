@@ -203,14 +203,15 @@ option {
 /*select.month {
   margin-right: 50px;
   width: 20px;
-}
+}*/
 
 select.day {
-  margin-right: 50px;
-  width: 20px;
+  /*margin-right: 60px;*/
+  /*padding-right: 30px;*/
+  width: 50px;
 }
 
-select.year {
+/*select.year {
   margin-right: -50px;
   width: 20px;
 }*/
