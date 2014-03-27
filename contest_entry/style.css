@@ -11,6 +11,11 @@ body {
   
 }
 
+img {
+  width: 90%;
+  margin-left: 4%;
+}
+
 #feedback-page{
   text-align:center;
 }
