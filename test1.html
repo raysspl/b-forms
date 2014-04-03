@@ -1,0 +1,498 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Bridg Contest Entry</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=702">
+
+<style type="text/css">
+  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {    
+  background-color: #e6e6e6;
+  /*background-image: url(http://wallfoy.com/wp-content/uploads/2014/03/Grey-White-Wallpaper-29.jpg);*/
+  background-size: cover;
+  height:100%;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+}
+ 
+body {
+  
+}
+
+img {
+  width: 90%;
+  margin-right: 1%;
+}
+
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  /*float:left;*/
+  padding-top:0px;
+}
+
+#form-div {
+  padding-left:35px;
+  padding-right:35px;
+  /*padding-top:35px;*/
+  padding-bottom:50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  /*color:#3c3c3c;*/
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 14px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  /*color: #3498db;*/
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+img.heroimage {
+  width: 90%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 20px;
+  border-bottom: 5px solid #65b5bc;
+  color: red;
+}
+
+h2 {
+  padding-bottom: 20px;
+  border-bottom: 5px solid #65b5bc;
+  color: red; 
+}
+
+p.name, p.email, p.text, p.birthdate {
+  margin: 10px 0px;
+}
+
+p.birthdate {
+  /*margin: 0px 100px 0px 10px;*/
+  font-size: 14px;
+  /*text-align: none;*/
+}
+
+span.bday {
+  margin-left: 52px;
+  margin-right: 74px;
+  /*padding-right: 100px;*/
+  font-size: 14px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  /*background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);*/
+  background-image: url('images/name.svg');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+}
+
+#name:focus{   
+  /*background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);*/
+  background-image: url('images/name.svg');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  /*background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);*/
+  background-image: url('images/email.svg');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+}
+
+#email:focus{
+  /*background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);*/
+  background-image: url('images/email.svg');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+}
+
+#instagram{
+  /*background-image: url(http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/512/Social-Networks-Instagram-icon.png);*/
+  background-image: url('images/instagram.svg');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+}
+
+#instagram:focus{
+  /*background-image: url(http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/512/Social-Networks-Instagram-icon.png);*/
+  background-image: url('images/instagram.png');
+  background-size: 20px 20px;
+  background-position: 11px 12px;
+  background-repeat: no-repeat;
+}
+
+#birthdate {
+  /*background-image: url(https://cdn1.iconfinder.com/data/icons/windows-8-metro-style/256/birthday_cake.png);*/
+  background-image: url('images/birthday.png');
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  margin-left: 6px;
+  text-align: none;
+}
+
+#location{
+  /*background-image: url(https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/location-alt-512.png);*/
+  background-image: url('images/location.png');
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  /*margin: 10px; */
+}
+
+.custom-dropdown select {
+  background-color: #fbfbfb;
+  color: #a4a4a4;
+  font-size: 14px;
+  padding: 13px;
+  /*padding-right: 2.5em; */
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+  /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+/*  Custom dropdown arrow */
+/*.custom-dropdown::after { 
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}*/
+
+/*  Custom dropdown arrow cover */
+/*.custom-dropdown::before { 
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}*/
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+  background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+}
+/*end dropdown*/
+
+#button-blue{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  /*border: #fbfbfb solid 4px;*/
+  border: 0px;
+  border-radius: 8px;
+  cursor:pointer;
+  background-color: #65b5bc;
+  color:white;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  margin-bottom: 5px;
+  font-weight:700;
+  font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
+}
+
+/*#button-blue:hover{
+  background-color: rgba(0,0,0,0);
+  background-color: #3498db;
+  color: #0493bd;
+  color: white;
+}
+  
+.submit:hover {
+  color: #3498db;
+}*/
+  
+.ease {
+  border-radius: 5px;
+  width: 0px;
+  /*height: 50px;*/
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+footer {
+  /*margin-top: 5%;*/
+}
+
+img.footerimage {
+  width: 12.5%;
+}
+
+input {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    }
+  #birthdate {
+    margin-left: 4px;
+    padding-right: 10px;
+    /*padding-top: 20px;*/
+    margin-top: 20px;
+    width: 580px;
+    /*color: #b3b3b3;*/
+    background-image: none;
+    }
+  span.bday {
+    margin-left: 10px;
+    padding-right: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    }
+  img.footerimage {
+    width: 18%;
+    }
+  }
+</style>
+
+  </head>
+  <body>
+  <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+    <center><img src="http://hungryhowiesarizona.com/wp-content/themes/hungry_how/img/logo.png" class="heroimage"></center>
+    <p>Please fill out the information below in order to complete your entry into our contest</p>
+
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" />
+      </p>
+
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="instagram" placeholder="Instagram Username" />
+      </p>
+
+      <p id="birthdate" class="birthday"><span class="bday">Birthdate</span>
+
+      <span class="custom-dropdown 1">
+        <select class="month derpdwn">
+          <option value="none" disabled selected>Month</option>
+          <option>January</option>
+          <option>February</option>  
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+      </span>
+
+      <span class="custom-dropdown">
+        <select class="day derpdwn">
+          <option value="none" disabled selected>Day</option>
+          <option>1</option>
+          <option>2</option>  
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+      </span>
+
+      <span class="custom-dropdown yr">
+        <select class="">
+          <option value="none" disabled selected>Year</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+          <option>years API</option>
+        </select>
+      </span>
+      </p>
+
+      <p class="text">
+        <input name="location" class="validate[required,length[3,300]] feedback-input location" id="location" placeholder="Favorite City Location" />
+      </p>
+
+      <!-- <p class="text">
+        <textarea name="text" class="validate[required,length[3,300]] feedback-input" id="comment" placeholder="Additional comments"></textarea>
+      </p> -->
+      
+      
+      <div class="submit">
+        <input type="submit" value="ENTER THE CONTEST!" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+
+      <center><footer>
+        <small>You must be 18 & wiser to join, fam.</small><br><br>
+        <img src="http://www.jonathanjeter.com/images/Instagram_Icon_Small.png" class="footerimage">
+      </footer></center>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    /* Placeholders.js v3.0.2 */
+    (function(t){"use strict";function e(t,e,r){return t.addEventListener?t.addEventListener(e,r,!1):t.attachEvent?t.attachEvent("on"+e,r):void 0}function r(t,e){var r,n;for(r=0,n=t.length;n>r;r++)if(t[r]===e)return!0;return!1}function n(t,e){var r;t.createTextRange?(r=t.createTextRange(),r.move("character",e),r.select()):t.selectionStart&&(t.focus(),t.setSelectionRange(e,e))}function a(t,e){try{return t.type=e,!0}catch(r){return!1}}t.Placeholders={Utils:{addEventListener:e,inArray:r,moveCaret:n,changeType:a}}})(this),function(t){"use strict";function e(){}function r(){try{return document.activeElement}catch(t){}}function n(t,e){var r,n,a=!!e&&t.value!==e,u=t.value===t.getAttribute(V);return(a||u)&&"true"===t.getAttribute(D)?(t.removeAttribute(D),t.value=t.value.replace(t.getAttribute(V),""),t.className=t.className.replace(R,""),n=t.getAttribute(F),parseInt(n,10)>=0&&(t.setAttribute("maxLength",n),t.removeAttribute(F)),r=t.getAttribute(P),r&&(t.type=r),!0):!1}function a(t){var e,r,n=t.getAttribute(V);return""===t.value&&n?(t.setAttribute(D,"true"),t.value=n,t.className+=" "+I,r=t.getAttribute(F),r||(t.setAttribute(F,t.maxLength),t.removeAttribute("maxLength")),e=t.getAttribute(P),e?t.type="text":"password"===t.type&&M.changeType(t,"text")&&t.setAttribute(P,"password"),!0):!1}function u(t,e){var r,n,a,u,i,l,o;if(t&&t.getAttribute(V))e(t);else for(a=t?t.getElementsByTagName("input"):b,u=t?t.getElementsByTagName("textarea"):f,r=a?a.length:0,n=u?u.length:0,o=0,l=r+n;l>o;o++)i=r>o?a[o]:u[o-r],e(i)}function i(t){u(t,n)}function l(t){u(t,a)}function o(t){return function(){m&&t.value===t.getAttribute(V)&&"true"===t.getAttribute(D)?M.moveCaret(t,0):n(t)}}function c(t){return function(){a(t)}}function s(t){return function(e){return A=t.value,"true"===t.getAttribute(D)&&A===t.getAttribute(V)&&M.inArray(C,e.keyCode)?(e.preventDefault&&e.preventDefault(),!1):void 0}}function d(t){return function(){n(t,A),""===t.value&&(t.blur(),M.moveCaret(t,0))}}function g(t){return function(){t===r()&&t.value===t.getAttribute(V)&&"true"===t.getAttribute(D)&&M.moveCaret(t,0)}}function v(t){return function(){i(t)}}function p(t){t.form&&(T=t.form,"string"==typeof T&&(T=document.getElementById(T)),T.getAttribute(U)||(M.addEventListener(T,"submit",v(T)),T.setAttribute(U,"true"))),M.addEventListener(t,"focus",o(t)),M.addEventListener(t,"blur",c(t)),m&&(M.addEventListener(t,"keydown",s(t)),M.addEventListener(t,"keyup",d(t)),M.addEventListener(t,"click",g(t))),t.setAttribute(j,"true"),t.setAttribute(V,x),(m||t!==r())&&a(t)}var b,f,m,h,A,y,E,x,L,T,N,S,w,B=["text","search","url","tel","email","password","number","textarea"],C=[27,33,34,35,36,37,38,39,40,8,46],k="#ccc",I="placeholdersjs",R=RegExp("(?:^|\\s)"+I+"(?!\\S)"),V="data-placeholder-value",D="data-placeholder-active",P="data-placeholder-type",U="data-placeholder-submit",j="data-placeholder-bound",q="data-placeholder-focus",z="data-placeholder-live",F="data-placeholder-maxlength",G=document.createElement("input"),H=document.getElementsByTagName("head")[0],J=document.documentElement,K=t.Placeholders,M=K.Utils;if(K.nativeSupport=void 0!==G.placeholder,!K.nativeSupport){for(b=document.getElementsByTagName("input"),f=document.getElementsByTagName("textarea"),m="false"===J.getAttribute(q),h="false"!==J.getAttribute(z),y=document.createElement("style"),y.type="text/css",E=document.createTextNode("."+I+" { color:"+k+"; }"),y.styleSheet?y.styleSheet.cssText=E.nodeValue:y.appendChild(E),H.insertBefore(y,H.firstChild),w=0,S=b.length+f.length;S>w;w++)N=b.length>w?b[w]:f[w-b.length],x=N.attributes.placeholder,x&&(x=x.nodeValue,x&&M.inArray(B,N.type)&&p(N));L=setInterval(function(){for(w=0,S=b.length+f.length;S>w;w++)N=b.length>w?b[w]:f[w-b.length],x=N.attributes.placeholder,x?(x=x.nodeValue,x&&M.inArray(B,N.type)&&(N.getAttribute(j)||p(N),(x!==N.getAttribute(V)||"password"===N.type&&!N.getAttribute(P))&&("password"===N.type&&!N.getAttribute(P)&&M.changeType(N,"text")&&N.setAttribute(P,"password"),N.value===N.getAttribute(V)&&(N.value=x),N.setAttribute(V,x)))):N.getAttribute(D)&&(n(N),N.removeAttribute(V));h||clearInterval(L)},100)}M.addEventListener(t,"beforeunload",function(){K.disable()}),K.disable=K.nativeSupport?e:i,K.enable=K.nativeSupport?e:l}(this);
+  </script>
+  </body>
+</html>
