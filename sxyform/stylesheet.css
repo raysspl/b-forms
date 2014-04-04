@@ -395,3 +395,102 @@ input {
     width: 18%;
     }
   }
+}
+
+/*iPad specific*/ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    overflow: auto;
+    margin-right: 0px;
+  }
+  .feedback-input {
+    width: 86%;
+  }
+  .fa.fa-calendar {
+    margin-right: 5px;
+
+  }
+
+  #form-div{
+    left: 3%;
+    /*margin-right: 2%;*/
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    }
+  /*#birthdate {
+    margin-left: 4px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 580px;
+    color: #b3b3b3;
+    background-image: none;
+    }*/
+  span.bday {
+    margin-left: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    }
+  .custom-dropdown select {
+    padding: 11px ;
+    /*margin-right: 1em;*/
+  }
+  img.footerimage {
+    width: 18%;
+    }
+  }
+}
+
+/*iPhone specific*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  body {
+    overflow: auto;
+    margin-right: 0px;
+  }
+  .feedback-input {
+    width: 86%;
+  }
+  .fa.fa-calendar {
+    margin-right: 5px;
+
+  }
+
+  #form-div{
+    left: 3%;
+    /*margin-right: 2%;*/
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    }
+  /*#birthdate {
+    margin-left: 4px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 580px;
+    color: #b3b3b3;
+    background-image: none;
+    }*/
+  span.bday {
+    margin-left: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    }
+  .custom-dropdown select {
+    padding: 11px ;
+    /*margin-right: 1em;*/
+  }
+  img.footerimage {
+    width: 18%;
+    }
+  }
+}
