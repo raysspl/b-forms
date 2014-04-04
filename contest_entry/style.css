@@ -88,6 +88,10 @@ h1 {
   color: red;
 }
 
+p.custom-text {
+  text-align: center;
+}
+
 h2 {
   padding-bottom: 20px;
   border-bottom: 5px solid #65b5bc;
