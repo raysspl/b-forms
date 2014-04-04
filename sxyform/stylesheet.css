@@ -220,8 +220,8 @@ textarea {
 }
 
 .custom-dropdown select {
-  background-color: #fbfbfb;
-  color: #a4a4a4;
+  /*background-color: #fbfbfb;*/
+  color: #848484;
   font-size: 14px;
   padding: 13px;
   /*padding-right: 2.5em; */
