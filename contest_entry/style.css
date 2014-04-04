@@ -227,8 +227,16 @@ textarea {
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -o-appearance:none;
+   appearance:none; 
   font-family: 'Roboto Slab', serif, Helvetica, Arial, sans-serif;
   /* hide default arrow in chrome OSX */
+}
+
+select::-ms-expand{
+  display:none;
 }
 
 .custom-dropdown::before,
